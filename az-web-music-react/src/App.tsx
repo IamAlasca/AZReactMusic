@@ -1,15 +1,18 @@
 import React from 'react';
+import { HashRouter } from 'react-router-dom';
 import '@/App.css';
 import AZAppHeader from './components/app-header';
 import AZAppFooter from './components/app-footer';
+import routes from '../router';
+
 
 function App() {
   return (
-    <div>
+    <HashRouter>
       <AZAppHeader/>
-      <h2>App</h2>
+      {renderRoutes(routes)}
       <AZAppFooter/>
-    </div>
+    </HashRouter>
   );
 }
 
