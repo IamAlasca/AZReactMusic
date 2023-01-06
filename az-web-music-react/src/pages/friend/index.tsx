@@ -6,4 +6,4 @@ export default memo(function AZFriend() {
             <h2>AZFriend</h2>
         </div>
     )
-})
+});
